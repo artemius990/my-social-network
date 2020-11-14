@@ -11,10 +11,10 @@ const MyPosts = (props) => {
             <h3>My posts</h3>
             <div>
                 <div>
-                    <textarea></textarea>
+                    <textarea className={s.textarea}></textarea>
                 </div>
                 <div>
-                    <button>Add post</button>
+                    <button className={s.button}>Add post</button>
                 </div>
             </div>
             <div className={s.posts}>
