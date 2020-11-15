@@ -16,9 +16,15 @@
 .messages {
     padding: 10px;
     font-size: 20px;
-}
+}    
 
 .messages .message {
     color: white;
 }
+
+.img{
+    height: 30px;
+}
+
+
 

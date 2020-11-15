@@ -7,7 +7,7 @@ const ProfileInfo = () => {
         <div>
             <div>
                 <img className={s.img}
-                    src='https://sharespro.ru/sites/default/files/styles/catalog_big/public/images_1711?itok=1bYoKB1R'/>
+                    src='https://trawor.by/media/upload/image_20190726013709.jpg'/>
             </div>
             <div className={s.descriptionBlock}>
                 ava + description

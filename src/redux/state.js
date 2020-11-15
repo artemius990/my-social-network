@@ -9,12 +9,12 @@ let state = {
     },
     dialogsPage: {
         dialogs: [
-            {id: 1, name: 'Dimych'},
-            {id: 2, name: 'Andrew'},
-            {id: 3, name: 'Sveta'},
-            {id: 4, name: 'Sasha'},
-            {id: 5, name: 'Viktor'},
-            {id: 6, name: 'Valera'}
+            {id: 1, name: 'Dimych', img:'http://www.gravatar.com/avatar/85814b0e506aa115df578a494e9e0b56?s=325&r=g&d=mm'},
+            {id: 2, name: 'Andrew', img:'http://www.gravatar.com/avatar/85814b0e506aa115df578a494e9e0b56?s=325&r=g&d=mm'},
+            {id: 3, name: 'Sveta', img:'http://www.gravatar.com/avatar/85814b0e506aa115df578a494e9e0b56?s=325&r=g&d=mm'},
+            {id: 4, name: 'Sasha', img:'http://www.gravatar.com/avatar/85814b0e506aa115df578a494e9e0b56?s=325&r=g&d=mm'},
+            {id: 5, name: 'Viktor', img:'http://www.gravatar.com/avatar/85814b0e506aa115df578a494e9e0b56?s=325&r=g&d=mm'},
+            {id: 6, name: 'Valera', img:'http://www.gravatar.com/avatar/85814b0e506aa115df578a494e9e0b56?s=325&r=g&d=mm'}
         ],
         messages: [
             {id: 1, message: 'Hi'},
