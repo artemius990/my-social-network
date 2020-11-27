@@ -4,7 +4,9 @@ const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY';
 const SEND_MESSAGE = 'SEND_MESSAGE';
 
+
 let store = {
+
     _state: {
         profilePage: {
             posts: [
@@ -13,7 +15,7 @@ let store = {
                 {id: 3, message: 'Blabla', likesCount: 11},
                 {id: 4, message: 'Dada', likesCount: 11}
             ],
-            newPostText: 'it-kamasutra.com'
+            newPostText: 'Hello guys!'
         },
         dialogsPage: {
             dialogs: [
@@ -35,18 +37,20 @@ let store = {
         },
         sidebar: {}
     },
+
     _callSubscriber() {
         console.log('State changed');
     },
 
+    subscribe(observer) {
+        this._callSubscriber = observer;  // observer
+    },
+    
     getState() {
         debugger;
         return this._state;
     },
-    subscribe(observer) {
-        this._callSubscriber = observer;  // observer
-    },
-
+    
     dispatch(action) { // { type: 'ADD-POST' }
         if (action.type === ADD_POST) {
             let newPost = {
