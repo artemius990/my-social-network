@@ -5,10 +5,10 @@ import ProfileStatus from "./ProfileStatus"
 
 
 const ProfileInfo = (props) => {
-	 if (!props.profile) {
+    if (!props.profile) {
         return <Preloader />
     }
-	
+
     return (
         <div>
             {/*  <div>
@@ -16,8 +16,9 @@ const ProfileInfo = (props) => {
                     src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350'/>
             </div>*/}
             <div className={s.descriptionBlock}>
-			<img src={props.profile.photos.large} />
-                <ProfileStatus status={"Hello my friends"}/>
+                <img src={props.profile.photos.large} />
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
+                {/* <ProfileStatus status={"Hello my friends"}/> */}
             </div>
         </div>
     )
